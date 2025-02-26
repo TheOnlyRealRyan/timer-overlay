@@ -16,14 +16,6 @@ def update_timer():
         timer_label.config(text=f"{int(hours):02}:{int(minutes):02}:{seconds:04.1f}")
         root.update()
         time.sleep(0.1)
-    
-    # This displays just seconds
-    # global start_time, timer_running, elapsed_time
-    # while timer_running:
-    #     elapsed_time = time.time() - start_time
-    #     timer_label.config(text=f"{elapsed_time:.1f} sec")
-    #     root.update()
-    #     time.sleep(0.1)
 
 def toggle_timer():
     global timer_running, start_time, elapsed_time
